@@ -1,18 +1,14 @@
-import { Route, Routes } from "react-router"
-import HomePage from "../pages/Home/HomePage"
+import { Route, Routes } from 'react-router';
+import CategoryFlower from '@/pages/Category/Category';
+import HomePage from '@/pages/Home/HomePage';
 
+const Router = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/:slug" element={<CategoryFlower />} />
+    </Routes>
+  );
+};
 
-
-
-const Router = ()=> {
-
-
-    return (
-
-        <Routes>
-                <Route path="/" element={<HomePage />} />
-        </Routes>
-    )
-}
-
-export default Router
+export default Router;

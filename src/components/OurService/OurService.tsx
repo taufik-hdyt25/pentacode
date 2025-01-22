@@ -70,7 +70,7 @@ const OurService: React.FC = () => {
       <div
         className="h-screen  bg-cover bg-center"
         style={{
-          backgroundImage: 'url(assets/images/bg.png)', // Menggunakan gambar sebagai background
+          backgroundImage: 'url(assets/images/bg.png)',
         }}
       >
         <div className="text-center bg-black bg-opacity-50 rounded-lg p-8 h-full flex flex-col justify-center">

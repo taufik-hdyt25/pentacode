@@ -118,9 +118,12 @@ const HomePage: React.FC = () => {
                 <div className="h-full flex items-center text-[38px]">
                   Fresh Flowers
                 </div>
-                <span className="mb-8 flex items-center gap-2">
+                <a
+                  href="/fresh-flower"
+                  className="mb-8 flex items-center gap-2"
+                >
                   Shop now <FaArrowRightLong />
-                </span>
+                </a>
               </div>
             </div>
             <div className="min-h-[360px] border-r border-black overflow-hidden">
@@ -165,9 +168,12 @@ const HomePage: React.FC = () => {
                 <div className="h-full flex items-center text-[38px]">
                   Dried Flowers
                 </div>
-                <span className="mb-8 flex items-center gap-2 ">
+                <a
+                  href="/dried-flower"
+                  className="mb-8 flex items-center gap-2"
+                >
                   <FaArrowLeftLong /> Shop now
-                </span>
+                </a>
               </div>
             </div>
 
@@ -178,9 +184,9 @@ const HomePage: React.FC = () => {
                 <div className="h-full flex items-center text-[38px]">
                   Live Plants
                 </div>
-                <span className="mb-8 flex items-center gap-2 ">
+                <a href="/live-flower" className="mb-8 flex items-center gap-2">
                   Shop now <FaArrowRightLong />
-                </span>
+                </a>
               </div>
             </div>
             <div className=" min-h-[360px] max-h-[360px] border-black border-l border-b border-r">
@@ -209,9 +215,9 @@ const HomePage: React.FC = () => {
                 <div className="h-full flex items-center text-[38px]">
                   Fresheners
                 </div>
-                <span className="mb-8 flex items-center gap-2 ">
+                <a href="/fresheners-flower" className="mb-8 flex items-center gap-2">
                   Shop now <FaArrowRightLong />
-                </span>
+                </a>
               </div>
             </div>
 
