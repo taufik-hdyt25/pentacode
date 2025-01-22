@@ -321,15 +321,20 @@ const HomePage: React.FC = () => {
             <div className="h-full overflow-hidden bg-red-100">
               <motion.div
                 initial={{ scale: 1.5 }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1 }}
                 transition={{
                   duration: 1.5,
                   ease: [0.25, 0.46, 0.45, 0.94],
                 }}
-                className='h-full'
+                className="h-full"
+                viewport={{ once: false, amount: 0.2 }}
               >
-                <div className='h-full'>
-                  <img src={shopName} alt="shop" className="h-full object-cover" />
+                <div className="h-full">
+                  <img
+                    src={shopName}
+                    alt="shop"
+                    className="h-full object-cover"
+                  />
                 </div>
               </motion.div>
             </div>
