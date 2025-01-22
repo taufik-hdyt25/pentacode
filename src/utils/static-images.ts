@@ -1,0 +1,9 @@
+
+export const imgHero = './assets/images/img-hero.png';
+export const freshFlower = "./assets/images/Fresh-Flower.jpeg"
+export const driedFlowers = './assets/images/Dried-Flowers.png';
+export const livePlants = './assets/images/live-plants.png';
+export const fresheners = './assets/images/fresheners.png';
+export const aromaCandels = './assets/images/aroma-candels.png';
+export const shopName = './assets/images/shop-name.png';
+export const google = './assets/images/google.png';
