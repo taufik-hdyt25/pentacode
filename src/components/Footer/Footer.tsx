@@ -11,8 +11,8 @@ const Footer:React.FC = ()=> {
 
 
     return (
-      <div className="grid grid-cols-4 border border-black ">
-        <div className="border-r border-black p-[40px]">
+      <div className="grid grid-cols-2 md:grid-cols-4 border border-black ">
+        <div className="border-r border-black p-[40px] border-b md:border-b-muted">
           <p className="font-light mb-5">
             Remember to offer beautiful flowers from Kyiv LuxeBouquets
             Valentines Day, Mothers Day, Christmas... Reminds you 7 days before.
@@ -21,7 +21,7 @@ const Footer:React.FC = ()=> {
           <Input className="rounded-none" placeholder="Your Email" />
           <Button className="rounded-none mt-5 w-full">REMIND</Button>
         </div>
-        <div className="border-r border-black p-[40px]">
+        <div className="border-r border-black p-[40px] border-b md:border-b-muted">
           <p className="text-[#808080] text-xl">Contact Us</p>
           <div className="mt-3">
             <div>
@@ -47,7 +47,7 @@ const Footer:React.FC = ()=> {
             </div>
           </div>
         </div>
-        <div className="border-r border-black p-[40px]">
+        <div className="border-r border-black p-[40px] border-b md:border-b-muted">
           <p className="text-[#808080] text-xl">Shop</p>
           <ul className="mt-5 flex flex-col gap-2">
             <li>All Products</li>
@@ -64,7 +64,7 @@ const Footer:React.FC = ()=> {
             <li>Wedding & Event Decor</li>
           </ul>
         </div>
-        <div className="border-r border-black p-[40px]">
+        <div className="border-r border-black p-[40px] border-b md:border-b-muted">
           <p className="text-[#808080] text-xl">About Us</p>
 
           <div className="mt-3">

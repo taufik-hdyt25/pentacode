@@ -1,17 +1,18 @@
 import { Layout } from '@/components/Layout';
 import OurClient from '@/components/OurClient/OurClient';
+import OurService from '@/components/OurService/OurService';
 import { ChooseItem } from '@/components/WhyChoose';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { WHYCHOOSE } from '@/utils/constants';
 import {
-    aromaCandels,
-    driedFlowers,
-    freshFlower,
-    fresheners,
-    imgHero,
-    livePlants,
-    shopName,
+  aromaCandels,
+  driedFlowers,
+  freshFlower,
+  fresheners,
+  imgHero,
+  livePlants,
+  shopName,
 } from '@/utils/static-images';
 import { AiOutlinePinterest } from 'react-icons/ai';
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
@@ -25,7 +26,7 @@ const HomePage: React.FC = () => {
   return (
     <Layout>
       <div>
-        <div className="grid grid-cols-2 h-full">
+        <div className="grid grid-cols-1 h-full md:grid-cols-2">
           <div className="gird grid-cols-1">
             <div className="h-[360px] px-[80px] pt-[80px] ">
               <div className="border-b border-black h-full">
@@ -44,7 +45,7 @@ const HomePage: React.FC = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 pb-[80px] px-[80px] pt-[24px] border-b border-black">
+            <div className="grid grid-cols-2 pb-[80px] px-[80px] pt-[24px]">
               <div className="border-r border-black pr-[24px]">
                 <img
                   width={'256px'}
@@ -62,7 +63,7 @@ const HomePage: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 border-t-muted overflow-y-auto h-screen">
+          <div className="grid grid-cols-2 border-t md:border-t-muted  border-black overflow-y-auto h-screen">
             {/* col 1 */}
             <div className="border-r border-l border-black  min-h-[360px]">
               <div className="flex  flex-col items-center h-full justify-between">
@@ -85,7 +86,7 @@ const HomePage: React.FC = () => {
 
             {/* col 2 */}
 
-            <div className=" min-h-[360px] border-t border-black border-l border-b">
+            <div className=" min-h-[360px] border-t border-black border-l ">
               <img
                 width={'100%'}
                 height={'100%'}
@@ -257,8 +258,11 @@ const HomePage: React.FC = () => {
           </div>
           {/* END CONTACT US */}
         </div>
+
+        <OurService />
+
         <div className="flex justify-center py-20 px-32">
-            <OurClient />
+          <OurClient />
         </div>
       </div>
     </Layout>

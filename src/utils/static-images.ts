@@ -7,3 +7,4 @@ export const fresheners = './assets/images/fresheners.png';
 export const aromaCandels = './assets/images/aroma-candels.png';
 export const shopName = './assets/images/shop-name.png';
 export const google = './assets/images/google.png';
+export const hapines = './assets/images/hapines.png';
