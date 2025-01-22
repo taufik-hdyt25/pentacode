@@ -21,6 +21,7 @@ import { IoLocationOutline, IoLogoInstagram } from 'react-icons/io5';
 import { MdOutlineCall } from 'react-icons/md';
 import { PiTelegramLogoBold } from 'react-icons/pi';
 import { RiTwitterLine } from 'react-icons/ri';
+import * as motion from 'motion/react-client';
 
 const HomePage: React.FC = () => {
   return (
@@ -29,36 +30,83 @@ const HomePage: React.FC = () => {
         <div className="grid grid-cols-1 h-full md:grid-cols-2">
           <div className="gird grid-cols-1">
             <div className="h-[360px] px-[80px] pt-[80px] ">
-              <div className="border-b border-black h-full">
-                <h1 className="text-[67px] mb-2">
-                  Kyiv
-                  <div className="flex items-start">
-                    LuxeBouquets <span className="text-[50px]">&reg;</span>
-                  </div>
-                </h1>
-                <p className="font-light text-[16px]">
-                  Discover Uniquely Crafted Bouquets and Gifts for Any Occasion:{' '}
-                  <br />
-                  Spread Joy with Our{' '}
-                  <span className="italic">Online Flower Delivery Service</span>
-                </p>
+              <div className="border-b border-black h-full ">
+                <div className="overflow-hidden">
+                  <motion.div
+                    animate={{ y: 0, opacity: 1 }}
+                    initial={{ y: 100, opacity: 0 }}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.5,
+                      ease: [0.25, 0.46, 0.45, 0.94],
+                    }}
+                  >
+                    <h1 className="text-[67px] mb-2">
+                      Kyiv
+                      <div className="flex items-start">
+                        LuxeBouquets <span className="text-[50px]">&reg;</span>
+                      </div>
+                    </h1>
+                  </motion.div>
+                </div>
+                <div className="overflow-hidden">
+                  <motion.div
+                    animate={{ y: 0, opacity: 1 }}
+                    initial={{ y: 100, opacity: 0 }}
+                    transition={{
+                      duration: 1,
+                      delay: 1,
+                      ease: [0.25, 0.46, 0.45, 0.94],
+                    }}
+                  >
+                    <p className="font-light text-[16px]">
+                      Discover Uniquely Crafted Bouquets and Gifts for Any
+                      Occasion: <br />
+                      Spread Joy with Our{' '}
+                      <span className="italic">
+                        Online Flower Delivery Service
+                      </span>
+                    </p>
+                  </motion.div>
+                </div>
               </div>
             </div>
 
             <div className="grid grid-cols-2 pb-[80px] px-[80px] pt-[24px]">
-              <div className="border-r border-black pr-[24px]">
-                <img
-                  width={'256px'}
-                  height={'256px'}
-                  style={{ objectFit: 'contain' }}
-                  src={imgHero}
-                />
+              <div className="border-r border-black pr-[24px] overflow-hidden">
+                <motion.div
+                  animate={{ y: 0, opacity: 1 }}
+                  initial={{ y: 260, opacity: 0 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.7,
+                    ease: [0.25, 0.46, 0.45, 0.94],
+                  }}
+                >
+                  <img
+                    width={'256px'}
+                    height={'256px'}
+                    style={{ objectFit: 'contain' }}
+                    src={imgHero}
+                  />
+                </motion.div>
               </div>
-              <div className="pl-[24px] h-full">
-                <p className="text-[14px] font-light flex items-end h-full">
-                  Experience the joy of giving with our modern floral studio.
-                  Order online and send fresh flowers, plants and gifts today.
-                </p>
+              <div className="pl-[24px] h-full overflow-hidden">
+                <motion.div
+                  className="h-full"
+                  animate={{ y: 0, opacity: 1 }}
+                  initial={{ y: 100, opacity: 0 }}
+                  transition={{
+                    duration: 1,
+                    delay: 1,
+                    ease: [0.25, 0.46, 0.45, 0.94],
+                  }}
+                >
+                  <p className="text-[14px] font-light flex items-end h-full">
+                    Experience the joy of giving with our modern floral studio.
+                    Order online and send fresh flowers, plants and gifts today.
+                  </p>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -75,24 +123,42 @@ const HomePage: React.FC = () => {
                 </span>
               </div>
             </div>
-            <div className="min-h-[360px] border-r border-black">
-              <img
-                width={'100%'}
-                height={'100%'}
-                style={{ objectFit: 'contain' }}
-                src={freshFlower}
-              />
+            <div className="min-h-[360px] border-r border-black overflow-hidden">
+              <motion.div
+                initial={{ scale: 1.5 }}
+                animate={{ scale: 1 }}
+                transition={{
+                  duration: 1.5,
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                }}
+              >
+                <img
+                  width={'100%'}
+                  height={'100%'}
+                  style={{ objectFit: 'contain' }}
+                  src={freshFlower}
+                />
+              </motion.div>
             </div>
 
             {/* col 2 */}
 
-            <div className=" min-h-[360px] border-t border-black border-l ">
-              <img
-                width={'100%'}
-                height={'100%'}
-                style={{ objectFit: 'contain' }}
-                src={driedFlowers}
-              />
+            <div className=" min-h-[360px] border-t border-black border-l overflow-hidden">
+              <motion.div
+                initial={{ scale: 1.5 }}
+                animate={{ scale: 1 }}
+                transition={{
+                  duration: 1.5,
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                }}
+              >
+                <img
+                  width={'100%'}
+                  height={'100%'}
+                  style={{ objectFit: 'contain' }}
+                  src={driedFlowers}
+                />
+              </motion.div>
             </div>
             <div className="border-l border-black min-h-[360px] border-t border-b border-r">
               <div className="flex  flex-col items-center h-full justify-between">
@@ -191,9 +257,19 @@ const HomePage: React.FC = () => {
           </div>
           <div className="border border-black border-t-muted border-b-muted h-screen overflow-y-auto ">
             {WHYCHOOSE.map((val, idx) => (
-              <div key={idx} className={`p-[80px] border-b border-black`}>
+              <motion.div
+                key={idx}
+                className={`p-[80px] border-b border-black`}
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  duration: 1,
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                }}
+                viewport={{ once: false }}
+              >
                 <ChooseItem title={val?.title} description={val?.description} />
-              </div>
+              </motion.div>
             ))}
           </div>
           {/* END WHY CHOOSE */}
@@ -242,7 +318,21 @@ const HomePage: React.FC = () => {
             </div>
           </div>
           <div className="border border-black flex flex-col justify-between">
-            <img src={shopName} alt="shop" className="flex-1" />
+            <div className="h-full overflow-hidden bg-red-100">
+              <motion.div
+                initial={{ scale: 1.5 }}
+                animate={{ scale: 1 }}
+                transition={{
+                  duration: 1.5,
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                }}
+                className='h-full'
+              >
+                <div className='h-full'>
+                  <img src={shopName} alt="shop" className="h-full object-cover" />
+                </div>
+              </motion.div>
+            </div>
             <div className="grid grid-cols-2">
               <div className="flex items-center justify-center py-2 border-r border-black">
                 Follow us

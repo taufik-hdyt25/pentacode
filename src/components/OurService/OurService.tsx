@@ -5,7 +5,7 @@ const OurService: React.FC = () => {
   return (
     <div>
       <h1 className="font-bold text-3xl my-20 text-center">Our Service</h1>
-      <div className="grid grid-cols-2 border border-black">
+      <div className="grid grid-cols-1 md:grid-cols-2 border border-black">
         <div className="border-r border-black">
           <img src={hapines} alt="hapines" />
         </div>
