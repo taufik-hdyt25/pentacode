@@ -1,9 +1,9 @@
+
+@import url('https://fonts.cdnfonts.com/css/zapfino');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* @import url('https://fonts.cdnfonts.com/css/gilroy-bold');
- */
 @font-face {
   font-family: 'Gilroy';
   src: url('./fonts/Gilroy-Regular.ttf') format('truetype');
@@ -16,6 +16,10 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Gilroy', sans-serif;
+}
+
+.font-zapfino {
+  font-family: 'Zapfino', sans-serif;
 }
 
 @layer base {
