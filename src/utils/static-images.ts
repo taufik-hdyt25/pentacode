@@ -8,3 +8,8 @@ export const aromaCandels = './assets/images/aroma-candels.png';
 export const shopName = './assets/images/shop-name.png';
 export const google = './assets/images/google.png';
 export const hapines = './assets/images/hapines.png';
+
+// CV
+export const icGoogle = './assets/svg/google.svg';
+export const icApple = './assets/svg/apple.svg';
+
